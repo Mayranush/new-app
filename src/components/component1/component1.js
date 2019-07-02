@@ -5,9 +5,10 @@ import { component1Actions } from './model';
 
 class Component1 extends React.Component {
     render() {
+        console.log(this.props, '==============')
         return (
             <div>
-                <button onClick={() => this.props.action1('new text')}>Component1</button>
+                <button onClick={() => this.props.action3()}>Component1</button>
                 <div>{ this.props.text }</div>
             </div>
         );
